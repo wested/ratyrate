@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ratyrate (1.2.2.alpha)
+    ratyrate (1.2.3.alpha)
 
 GEM
   remote: http://rubygems.org/
@@ -49,3 +49,6 @@ PLATFORMS
 DEPENDENCIES
   jquery-rails (>= 3.1.1)
   ratyrate!
+
+BUNDLED WITH
+   1.10.6
