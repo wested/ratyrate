@@ -26,6 +26,7 @@ module Helpers
     targetFormat = options[:targetFormat] || '{score}'
     targetScore  = options[:targetScore]  || ''
     readOnly     = options[:readonly]     || false
+    hints       = options[:hints]         || 'bad,poor,regular,good,gorgeous'
 
     disable_after_rate = options[:disable_after_rate] && true
     disable_after_rate = true if disable_after_rate == nil
@@ -63,6 +64,7 @@ module Helpers
                   # "data-round" => round,
                   "data-space" => space,
                   "data-single" => single,
+                  "data-hints" => hints,
                   "data-target" => target,
                   "data-target-text" => targetText,
                   "data-target-type" => targetType,
@@ -108,6 +110,7 @@ module Helpers
     targetFormat = options[:targetFormat] || '{score}'
     targetScore  = options[:targetScore]  || ''
     readOnly     = options[:readonly]     || false
+    hints       = options[:hints]         || 'bad,poor,regular,good,gorgeous'
 
     disable_after_rate = options[:disable_after_rate] || false
 
@@ -135,6 +138,7 @@ module Helpers
                 # "data-round" => round,
                 "data-space" => space,
                 "data-single" => single,
+                "data-hints" => hints,
                 "data-target" => target,
                 "data-target-text" => targetText,
                 "data-target-format" => targetFormat,
